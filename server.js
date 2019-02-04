@@ -3,10 +3,10 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '/dist')));
+app.use(express.static(path.join(__dirname, 'webpack/dist')));
 
 app.get('*', (req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, '/dist') });
+  res.sendFile('index.html', { root: path.join(__dirname, 'webpack/dist') });
 });
 
 const PORT = process.env.PORT || 8080;

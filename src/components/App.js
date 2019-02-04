@@ -1,11 +1,11 @@
 import React, { Component} from 'react';
-import ReactDOM from 'react-dom';
-import LandingPage from './landingPage';
+import LandingPage from './LandingPage';
 
 class App extends Component{
-  constructor(){
-    super()
+  state = {
+
   }
+
   render(){
     return(
       <LandingPage />
