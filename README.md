@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/andela/pippin-ah-frontend.svg?branch=develop)]
+
 # Learnground
 
 - Learnground is an app that brings the digital experience that comes with learning to secondary school students.
