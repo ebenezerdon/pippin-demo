@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 
 const NavbarComponent  = () => {
   
   return (
     <nav className="navbarbg">
     <div className="nav-wrapper">
-    <img src = {logo}  alt ='' />
+    <img src = {logo}  alt =''  className='logo'/>
       <a href="index.html" className="brand-logo">LearnGround</a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><a href="Science.html">Science</a></li>
