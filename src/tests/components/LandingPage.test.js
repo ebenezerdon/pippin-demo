@@ -4,7 +4,8 @@ import LandingPage from '../../components/LandingPage';
 
 describe('LandingPage Component', () => {
   it('should render the Landing Page', () => {
-    const wrapper = shallow(<LandingPage />);
-    expect(wrapper.exists()).toBe(true);
+    const component = shallow(<LandingPage />);
+    expect(component.exists()).toBe(true);
+    expect(component).toMatchSnapshot();
   });
 });
