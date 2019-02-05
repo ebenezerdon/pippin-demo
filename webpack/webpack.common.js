@@ -32,6 +32,7 @@ plugins:[
     {
       template: './public/index.html'
     }
+
   ),
   new StyleLintPlugin({
     configFile: '.stylelintrc',
@@ -41,7 +42,10 @@ plugins:[
     quiet: false
   })
 ],
-resolve: {
-  extensions: ['.js', '.jsx'],
-}
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+  devServer: {
+    historyApiFallback: true,
+  }
 }
