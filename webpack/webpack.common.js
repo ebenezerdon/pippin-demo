@@ -45,11 +45,10 @@ module.exports = {
             quiet: false,
         }),
     ],
-
-    devServer: {
-        historyApiFallback: true,
-    },
     resolve: {
         extensions: ['.js', '.jsx'],
+    },
+    devServer: {
+        historyApiFallback: true,
     },
 }
