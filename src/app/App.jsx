@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'materialize-css'
 import 'materialize-css/dist/css/materialize.min.css'
@@ -7,7 +8,9 @@ import '../style/index.scss'
 
 const App = () => (
     <Router>
-        <Route path="/" component={Navbar} />
+        <Switch>
+            <Route path="/" component={Home} />
+        </Switch>
     </Router>
 )
 
