@@ -36,9 +36,8 @@ plugins:[
   new StyleLintPlugin({
     configFile: '.stylelintrc',
     context: 'src',
-    files: '**/*.css',
-    failOnError: false,
-    quiet: false,
+    files: '**/*.scss',
+    quiet: false
   })
 ]
 
