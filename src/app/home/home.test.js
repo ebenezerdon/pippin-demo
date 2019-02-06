@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import LandingPage from '../../components/LandingPage'
+import HomeContainer from './HomeContainer'
 
-describe('LandingPage Component', () => {
+describe('HomePage Component', () => {
     it('should render the Landing Page', () => {
-        const component = shallow(<LandingPage />)
+        const component = shallow(<HomeContainer />)
         expect(component.exists()).toBe(true)
         expect(component).toMatchSnapshot()
     })
