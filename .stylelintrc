@@ -1,10 +1,6 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "number-leading-zero": "never",
-    "number-no-trailing-zeros": true
-  }
-  "rules": {
     "block-no-empty": null,
     "color-no-invalid-hex": true,
     "comment-empty-line-before": [ "always", {
