@@ -11,10 +11,16 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
+                },
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: {
+                    loader: 'file-loader',
                 },
             },
             {
@@ -24,13 +30,6 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
-            {
-                test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader',
-                options: {
-                    outputPath: './src/images',
-                },
             },
         ],
     },
@@ -42,8 +41,15 @@ module.exports = {
             configFile: '.stylelintrc',
             context: 'src',
             files: '**/*.scss',
-            failOnError: false,
+            failOnError: true,
             quiet: false,
         }),
     ],
+
+    devServer: {
+        historyApiFallback: true,
+    },
+    resolve: {
+        extensions: ['.js', '.jsx'],
+    },
 }
