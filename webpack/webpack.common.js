@@ -37,6 +37,7 @@ plugins:[
     configFile: '.stylelintrc',
     context: 'src',
     files: '**/*.scss',
+    failOnError: true,
     quiet: false
   })
 ]
