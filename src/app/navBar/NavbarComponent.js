@@ -25,7 +25,8 @@ const NavbarComponent = () => {
                     <li>
                         <a href="Mathematics.html">Mathematics</a>
                     </li>
-
+                </ul>
+                <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li>
                         <a href="SignIn.html">SignIn</a>
                     </li>
