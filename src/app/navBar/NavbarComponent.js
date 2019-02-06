@@ -4,7 +4,8 @@ const NavbarComponent = () => {
     return (
         <nav className="navbarbg">
             <div className="nav-wrapper">
-                <i className="far fa-play-circle" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i className="far fa-play-circle" /> &nbsp;
                 <a href="index.html" className="brand-logo">
                     LearnGround
                 </a>
@@ -24,6 +25,7 @@ const NavbarComponent = () => {
                     <li>
                         <a href="Mathematics.html">Mathematics</a>
                     </li>
+
                     <li>
                         <a href="SignIn.html">SignIn</a>
                     </li>
