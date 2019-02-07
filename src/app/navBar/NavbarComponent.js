@@ -14,7 +14,7 @@ const NavbarComponent = () => {
                     data-target="mobile-demo"
                     className="sidenav-trigger"
                 >
-                    <i className="material-icons">Menu</i>
+                    <i className="material-icons">menu</i>
                 </a>
                 <ul className="right hide-on-med-and-down">
                     <li>
