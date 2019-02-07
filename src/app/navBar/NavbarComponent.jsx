@@ -4,7 +4,7 @@ const NavbarComponent = () => {
     return (
         <nav className="navbarbg">
             <div className="nav-wrapper" id="iconRight">
-                <div>
+                <div className="Logo">
                     <i className="far fa-play-circle" />
                     <a href="#!" className="brand-logo">
                         LearnGround
