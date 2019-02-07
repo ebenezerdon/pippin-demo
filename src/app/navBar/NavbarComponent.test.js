@@ -6,5 +6,6 @@ describe(' Component', () => {
     it('should render the NavBar', () => {
         const component = shallow(<NavbarComponent />)
         expect(component.exists()).toBe(true)
+        expect(component).toMatchSnapshot()
     })
 })
