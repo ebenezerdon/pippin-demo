@@ -35,13 +35,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './public/index.html',
         }),
         new StyleLintPlugin({
             configFile: '.stylelintrc',
             context: 'src',
             files: '**/*.scss',
-            failOnError: false,
+            failOnError: true,
             quiet: false,
         }),
     ],
