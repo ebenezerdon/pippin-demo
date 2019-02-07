@@ -41,7 +41,7 @@ module.exports = {
             configFile: '.stylelintrc',
             context: 'src',
             files: '**/*.scss',
-            failOnError: true,
+            failOnError: false,
             quiet: false,
         }),
     ],
