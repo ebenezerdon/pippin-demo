@@ -37,7 +37,7 @@ const NavbarComponent = () => {
                         <li>
                             <a href="#!">SignIn</a>
                         </li>
-                        <li>|</li>
+                        <li style={{ color: '#03D6F5' }}>|fhjgkhlk</li>
 
                         <li>
                             <a href="#!">SignUp</a>
@@ -64,6 +64,9 @@ const NavbarComponent = () => {
                 </li>
                 <li>
                     <a href="#!">SignIn</a>
+                </li>
+                <li>
+                    <a href="#!">|</a>
                 </li>
                 <li>|</li>
 
