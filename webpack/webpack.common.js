@@ -1,6 +1,7 @@
 const path = require('path')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const GoogleFontsPlugin = require('google-fonts-webpack-plugin')
 
 module.exports = {
     entry: './src/index.js',
@@ -25,6 +26,14 @@ module.exports = {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
             },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [{ loader: 'file-loader' }],
+            },
+            {
+                test: /\.(png|jpg|jpeg)$/,
+                loader: 'url-loader',
+            },
         ],
     },
     plugins: [
@@ -37,6 +46,12 @@ module.exports = {
             files: '**/*.scss',
             failOnError: true,
             quiet: false,
+        }),
+        new GoogleFontsPlugin({
+            fonts: [
+                { family: 'Source Sans Pro' },
+                { family: 'Lato', variants: ['400', '700italic'] },
+            ],
         }),
     ],
     resolve: {
