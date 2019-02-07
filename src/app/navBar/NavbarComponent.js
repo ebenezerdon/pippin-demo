@@ -6,35 +6,68 @@ const NavbarComponent = () => {
             <div className="nav-wrapper">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <i className="far fa-play-circle" /> &nbsp;
-                <a href="index.html" className="brand-logo">
+                <a href="#!" className="brand-logo">
                     LearnGround
                 </a>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                <a
+                    href="#!"
+                    data-target="mobile-demo"
+                    className="sidenav-trigger"
+                >
+                    <i className="material-icons">Menu</i>
+                </a>
+                <ul className="right hide-on-med-and-down">
                     <li>
-                        <a href="Science.html">Science</a>
+                        <a href="#!">Science</a>
                     </li>
                     <li>
-                        <a href="Technology.html">Technology</a>
+                        <a href="#!">Technology</a>
                     </li>
                     <li>
-                        <a href="Technology.html">Engineering</a>
+                        <a href="#!">Engineering</a>
                     </li>
                     <li>
-                        <a href="Arts.html">Arts</a>
+                        <a href="#!">Arts</a>
                     </li>
                     <li>
-                        <a href="Mathematics.html">Mathematics</a>
+                        <a href="#!">Mathematics</a>
                     </li>
                     <li>
-                        <a href="SignIn.html">SignIn</a>
+                        <a href="#!">SignIn</a>
                     </li>
                     <li>|</li>
 
                     <li>
-                        <a href="SignUp.html">SignUp</a>
+                        <a href="#!">SignUp</a>
                     </li>
                 </ul>
             </div>
+
+            <ul className="sidenav" id="mobile-demo">
+                <li>
+                    <a href="#!">Science</a>
+                </li>
+                <li>
+                    <a href="#!">Technology</a>
+                </li>
+                <li>
+                    <a href="#!">Engineering</a>
+                </li>
+                <li>
+                    <a href="#!">Arts</a>
+                </li>
+                <li>
+                    <a href="#!">Mathematics</a>
+                </li>
+                <li>
+                    <a href="#!">SignIn</a>
+                </li>
+                <li>|</li>
+
+                <li>
+                    <a href="#!">SignUp</a>
+                </li>
+            </ul>
         </nav>
     )
 }
