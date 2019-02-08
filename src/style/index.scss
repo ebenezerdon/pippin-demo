@@ -1,6 +1,5 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
-$nav-bar: #5ed3f1;
 
 body {
     font: 100% $font-stack;
@@ -9,12 +8,11 @@ body {
 
 .navbarbg {
     background-color: #880038;
-    height: 60px;
-    margin-top: -0.4em;
+    height: 55px;
 }
 
-.horizontalbar {
-    color: $nav-bar;
+.navbarbg a {
+    margin-top: -0.21em;
 }
 
 .fa-play-circle {
@@ -27,23 +25,24 @@ body {
 }
 
 .Logo {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
-nav .sidenav-trigger {
-    float: right !important;
+nav .brand-logo {
+    font-weight: bolder;
+    font-size: 25px;
 }
 
-.sidenav li {
-    color: #5ed3f1 !important;
-    position: absolute;
-    width: 21px;
-    height: 30px;
-    left: 1289px;
-    top: 8px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 36px;
-    text-align: center;
+nav ul li {
+    color: #5ed3f1;
+}
+
+nav ul {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.shift {
+    position: fixed;
+    right: 35%;
 }
