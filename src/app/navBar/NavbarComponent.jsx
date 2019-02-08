@@ -18,7 +18,7 @@ const NavbarComponent = () => {
                     >
                         <i className="material-icons">menu</i>
                     </a>
-                    <ul className="right hide-on-med-and-down">
+                    <ul className="right hide-on-med-and-down shift">
                         <li>
                             <a href="#!">Science</a>
                         </li>
@@ -34,10 +34,12 @@ const NavbarComponent = () => {
                         <li>
                             <a href="#!">Mathematics</a>
                         </li>
+                    </ul>
+                    <ul className="right hide-on-med-and-down">
                         <li>
                             <a href="#!">SignIn</a>
                         </li>
-                        <li style={{ color: '#03D6F5' }}>|fhjgkhlk</li>
+                        <li>|</li>
 
                         <li>
                             <a href="#!">SignUp</a>
@@ -64,9 +66,6 @@ const NavbarComponent = () => {
                 </li>
                 <li>
                     <a href="#!">SignIn</a>
-                </li>
-                <li>
-                    <a href="#!">|</a>
                 </li>
                 <li>|</li>
 
