@@ -11,8 +11,7 @@
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:dev": "jest",
     "build:dev": "webpack",
-    "build-prod": "webpack -p --env production",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "build-prod": "webpack -p --env production"
   },
   "repository": {
     "type": "git",
