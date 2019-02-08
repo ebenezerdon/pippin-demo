@@ -37,7 +37,14 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
-        })
+        }),
+        new StyleLintPlugin({
+            configFile: '.stylelintrc',
+            context: 'src',
+            files: '**/*.scss',
+            failOnError: true,
+            quiet: false,
+        }),
     ],
     resolve: {
         extensions: ['.js', '.jsx'],
