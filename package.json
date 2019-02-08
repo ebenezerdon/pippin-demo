@@ -4,14 +4,15 @@
   "description": "Learngroud React",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack/webpack.dev.js --open --hot",
+    "start2": "webpack-dev-server --config webpack/webpack.dev.js --open --hot",
     "build": "webpack --config webpack/webpack.prod.js",
-    "serve": "node server.js",
-    "start-2": "npm run build && npm run serve",
+    "start": "node server.js",
+    "start1": "npm run build && npm run serve",
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:dev": "jest",
     "build:dev": "webpack",
-    "build-prod": "webpack -p --env production"
+    "build-prod": "webpack -p --env production",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "repository": {
     "type": "git",
