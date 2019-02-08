@@ -1,6 +1,9 @@
 import React from 'react';
+import 'materialize-css';
+import 'materialize-css/dist/css/materialize.min.css';
 import ReactDOM from 'react-dom';
-import App from './app/App';
+import '../node_modules/materialize-css/dist/js/materialize.min';
+import './style/index.scss';
+import App from './app/App.jsx';
 
-ReactDOM.render(<App />, document.getElementById('app')
-);
+ReactDOM.render(<App />, document.getElementById('app'));
